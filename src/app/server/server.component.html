@@ -1,3 +1,3 @@
-<h4>Server ID: {{server.id}}</h4>
-<p>Status: {{getServerStatus()}}</p>
+<h4>Server ID: {{serverId}} Server Name: {{serverName}}</h4>
+<p [ngClass]="{online: serverStatus === 'online', offline: serverStatus === 'offline'}">{{getServerStatus()}}</p>
 
